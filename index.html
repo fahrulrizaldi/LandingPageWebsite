@@ -9,7 +9,7 @@
 <style>
         body
         {
-            padding-top: 80px;
+            padding-top: 90px;
         }
         .jumbotron
         {
@@ -23,6 +23,40 @@
             background-repeat: no-repeat;
             background-size: cover;
             position: relative;
+        }
+
+        .disp {
+            padding-top: 100px;
+        }
+
+        .mg {
+            margin-top: 10px;
+        }
+
+        .service-style {
+            margin-top : 15px;
+            background-color: #fafbfc;
+        }
+        .text-green2 {
+            color: rgb(106, 209, 140);
+        }
+        .text-green{
+            color: #59854b;
+        }
+        .bg-green{
+            background-color: #bce4bc;
+        }
+
+        .button-primer {
+            background-color: #c9e9bf;
+            border-color:#c9e9bf;
+            color: #fff;
+            text-shadow:  0px 0px;
+        }
+        .button-primer:hover{
+            background-color:#bce4bc;
+            color: #FFF;
+            text-shadow: 0px 0px;
         }
     </style>
 </head>
@@ -40,31 +74,69 @@
                     <a class="nav-link active" aria-current="page" href="#">Home</a>
                     </li>
                     <li class="nav-item">
-                    <a class="nav-link" aria-current="page" href="#product">Product</a>
+                    <a class="nav-link" aria-current="page" href="#product">Service</a>
                     </li>
                     <li class="nav-item">
                     <a class="nav-link" aria-current="page" href="#about">About</a>
                     </li>
                     <li class="nav-item">
-                    <a class="nav-link" aria-current="page" href="#service">Service</a>
+                    <a class="nav-link" aria-current="page" href="#service">Contact Us</a>
                     </li>
                 </div>
             </div>
         </nav>  
     <!--Header-->
     <header class="jumbotron jumbotron-fluid background-header">
-      <div class="container-fluid text-center">
-        <h1 class="display-5" style="font-weight:bold;color: #FFF;"><strong>SOLUSI MEMBUTUHKAN PINJAMAN</strong></h1>
+      <div class="container-fluid text-center disp">
+        <h1 class="display-5" style="font-weight:bold;color: #c9e9bf;"><strong>SOLUSI MEMBUTUHKAN PINJAMAN</strong></h1>
         <p class="lead" style="font-weight: bold;color: #bce4bc;">Kami Menyediakan Pinjaman <span style="color: #FFF;"> Tanpa Bunga dan Bebas RIBA</span></p>
-        <p><a href="#" class="btn button-primer bg-success btn-lg" role="button">Gabung Sekarang!</a></p>
+        <p><a href="#" class="btn button-primer bg-success btn-lg mg" role="button">Gabung Sekarang!</a></p>
          <p><a href="#" class="btn button-primer bg-success-subtle btn-lg" role="button">Perajari Dulu</a></p>
       
       </div>
     </header>
 
     <!--Service-->
-    <section id="services">
-        ...
+    <section id="services" class="container service-style">
+        <div class="row text-center">
+            <div class="col-12"><h2>Mengapa Memilih Kami?</h2></div>
+            <div class="col-12 col-sm-6 col-lg-3 mt-2">
+                <span class="fa-stack">
+                <i class="fa fa-circle-thin fa-stack-2x text-green2"></i>
+                <i class="fas fa-solid fa-file text-green2"></i>
+                </span>
+                <h3 class="mt-4">Persyaratan Mudah</h3>
+                <p class="text-green">Persyaratan Sangat Mudah</p>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-3">
+                <span class="fa-stack">
+                <i class="fa fa-circle-thin fa-stack-2x text-green2"></i>
+                <i class="fa-solid fa-hand-holding-heart mt-2 text-green2"></i>
+                </span>                
+                <h3 class="mt-4">Tidak Ada Bunga</h3>
+                <p class="text-green">Kami Disini Tulus Membantu Anda</p>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-3">
+                <span class="fa-stack">
+                <i class="fa fa-circle-thin fa-stack-2x text-green2"></i>
+                <i class="fa-solid fa-info mt-2 text-green2"></i>
+                </span>                
+                <h3 class="mt-4">Bebas RIBA</h3>
+                <p class="text-green">Hanya Membantu Sesama, Biar Allah yang Membalasnya</p>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-3">
+              <span class="fa-stack">
+                <i class="fa fa-circle-thin fa-stack-2x text-green2"></i>
+                <i class="fa-solid fa-coins mt-2 text-green2"></i>
+                </span>                
+                <h3 class="mt-4">Nominal Tinggi</h3>
+                <p class="text-green">Bisa melakukan pengajuan 1jt hingga 100jt</p>
+            </div>
+            <div class="col-12 pt-3 mb-5">
+                <a class="btn btn-lg text-center bg-green" target="_blank" href="#" role="button"><strong>Service Lainnya</strong> </a>
+            </div>
+        
+        </div>
     </section>
 
     <!--Product-->
@@ -87,6 +159,6 @@
     ...
     </footer>
     <script src="js/bootstrap.bundle.min.js"></script>
-    
+    <script src="https://kit.fontawesome.com/459837649d.js" crossorigin="anonymous"></script>
 </body>
 </html>
