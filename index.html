@@ -58,6 +58,40 @@
             color: #FFF;
             text-shadow: 0px 0px;
         }
+
+        h2:before,
+        h2:after{
+            background-color: #c9e9bf;
+            content: "";
+            display: inline-block;
+            height: 1px;
+            position: relative;
+            vertical-align: middle;
+            width: 30%;        
+        }
+
+        h2::before{
+            right : 0.5em;
+            margin-left: -50%;
+        }
+        h2::after{
+            left : 0.5em;
+            margin-right: -50%;
+        }
+
+        .button-sekunder{
+            background-color: transparent;
+            border-color: #fafbfc;
+            color: #59854b;
+        }
+        .button-sekunder:hover{
+            background-color:#bce4bc;
+            border-color: #fafbfc;
+            color: #000000;
+        }
+        .cover{
+            background: no-repeat center/cover;
+        }
     </style>
 </head>
 <body>
@@ -74,17 +108,21 @@
                     <a class="nav-link active" aria-current="page" href="#">Home</a>
                     </li>
                     <li class="nav-item">
-                    <a class="nav-link" aria-current="page" href="#product">Service</a>
+                    <a class="nav-link" aria-current="page" href="#services">Service</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="#product">Product</a>
                     </li>
                     <li class="nav-item">
                     <a class="nav-link" aria-current="page" href="#about">About</a>
                     </li>
                     <li class="nav-item">
-                    <a class="nav-link" aria-current="page" href="#service">Contact Us</a>
+                    <a class="nav-link" aria-current="page" href="#Contact">Contact Us</a>
                     </li>
                 </div>
             </div>
         </nav>  
+
     <!--Header-->
     <header class="jumbotron jumbotron-fluid background-header">
       <div class="container-fluid text-center disp">
@@ -92,14 +130,13 @@
         <p class="lead" style="font-weight: bold;color: #bce4bc;">Kami Menyediakan Pinjaman <span style="color: #FFF;"> Tanpa Bunga dan Bebas RIBA</span></p>
         <p><a href="#" class="btn button-primer bg-success btn-lg mg" role="button">Gabung Sekarang!</a></p>
          <p><a href="#" class="btn button-primer bg-success-subtle btn-lg" role="button">Perajari Dulu</a></p>
-      
       </div>
     </header>
 
     <!--Service-->
-    <section id="services" class="container service-style">
+    <section id="services" class="container-fluid service-style">
         <div class="row text-center">
-            <div class="col-12"><h2>Mengapa Memilih Kami?</h2></div>
+            <div class="col-12 pb-4 mt-4"><h2 class="display-4">Mengapa Memilih Kami?</h2></div>
             <div class="col-12 col-sm-6 col-lg-3 mt-2">
                 <span class="fa-stack">
                 <i class="fa fa-circle-thin fa-stack-2x text-green2"></i>
@@ -135,18 +172,71 @@
             <div class="col-12 pt-3 mb-5">
                 <a class="btn btn-lg text-center bg-green" target="_blank" href="#" role="button"><strong>Service Lainnya</strong> </a>
             </div>
-        
         </div>
     </section>
 
     <!--Product-->
-    <section id="product">
+    <section id="product" class="container">
+        <div class="row text-center">
+            <div class="col-12 pb-4">
+                <h2 class="display-4 text-center mb-5">Produk Kami</h2>
+            </div>   
+ 
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img class="card-img-top" style="min-height: 400px;" src="images/produk1.jpg" alt="Sembako Murah">
+                    <div class="card-body" style="height: 200px;">
+                        <h4 class="card-title">Sembako Murah!!</h4>
+                        <p class="card-text">Dapatkan Kebutuhan Pokok Murah dengan kualitas yang sangat baik</p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="#" class="btn button-sekunder">Detail & Harga</a>
+                    </div>
+                </div>
+            </div>      
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img class="card-img-top" style="max-height: 400px;" src="images/produk2.png" alt="Pinjaman">
+                    <div class="card-body" style="height: 200px;">
+                        <h4 class="card-title">Pinjaman Tanpa Bunga!!</h4>
+                        <p class="card-text">Dapatkan Pinjaman dengan tanpa bunga dan bebas RIBA</p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="#" class="btn button-sekunder">Detail & Harga</a>
+                    </div>
+                </div>
+            </div>       
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img class="card-img-top" style="max-height: 400px;" src="images/produk3.jpg" alt="Tabungan">
+                    <div class="card-body" style="height: 200px;">
+                        <h4 class="card-title">Tabungan!!</h4>
+                        <p class="card-text">Siapkan diri anda untuk masa depan, Miliki tabungan di masa depan anda</p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="#" class="btn button-sekunder">Detail & Harga</a>
+                    </div>
+                </div>
+            </div>        
+
     ...
     </section>
-
     <!--About-->
-    <section id="about">
-    ...
+    <section id="about" class="bg-light">
+        <div class="container">
+            <h2 class="display-4 text-center mb-5">Tentang Kami</h2>
+            <div class="row g-0">
+                <div class="col-12 col-md-6">Ini Merupakan Teks Pertama</div>
+                <div class="col-12 col-md-6">
+                    <div class="vh-100 cover" style="background-image: url('images/banner1.jpg'); max-height: 700px;"></div>
+                </div>
+                <div class="col-12 col-md-6">
+                    <div class="vh-100 cover" style="background-image: url('images/about1.png'); max-height: 700px;"></div>
+                </div>
+                <div class="col-12 col-md-6"><h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam esse omnis quod atque quibusdam fuga placeat a et, laudantium pariatur eveniet iure! Commodi totam, vitae itaque quaerat animi corrupti numquam!</h3></div>
+            </div>
+        </div>
+    
     </section>
 
     <!--Contact-->
